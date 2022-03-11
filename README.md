@@ -9,3 +9,9 @@ by default, Spring must be able to locate a `ClientHttpRequestFactory` that does
 Spring autoconfigures it's `RestTemplateBuilder`, and if either `HttpComponentsClientHttpRequestFactory`
 or `OkHttp3ClientHttpRequestFactory` are found, they will be used, and they do provided the necessary support
 for `HTTP PATCH`.
+
+## Usage
+
+Run `./gradlew clean build` in order to execute the test.
+
+Remove `implementation("com.squareup.okhttp3:okhttp:4.9.3")` from the `build.gradle.kts` to get the test to fail.
